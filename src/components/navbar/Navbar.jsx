@@ -38,7 +38,7 @@ const Navbar = () => {
           <div className='relative'>
             <input
               type='search'
-              className='w-[20em] h-[2em] bg-white rounded-full border border-gray-300 outline-[#ff7016] px-3. placeholder:Search  overflow-hidden '
+              className='w-[20em] h-[2em] px-4 bg-white rounded-full border border-gray-300 outline-[#ff7016] px-3. placeholder:Search  overflow-hidden '
             />
             <button className='absolute right-0 top-0 bg-accent w-[5em] h-full rounded-r-full text-accent cursor-pointer md:text-lg md:w-[4em]'>
               Search
