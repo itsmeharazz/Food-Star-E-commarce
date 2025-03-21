@@ -18,7 +18,7 @@ import dairy_category from "./Dairy-categoty.png";
 import fish_category from "./fish-categoty.png";
 import beverage_category from "./Food and beverage-categoty.png";
 import herbal_category from "./herbal-categoty.png";
-import mix_masala_category from "./mix-masala-category.png";
+import mix_masala_category from "./mix-masala-categoty.png";
 import nut_category from "./nut-category.png";
 import seed_category from "./seed-categoty.png";
 import spice from "./Spices categorypng.png";

@@ -6,11 +6,13 @@ import Category from "./pages/Category";
 import Cart from "./pages/Cart";
 import PlaceOrder from "./pages/PlaceOrder";
 import ProductsDetails from "./pages/ProductsDetail";
+import Navbar from "./components/navbar/Navbar";
 
 const App = () => {
   return (
     <>
       <div className='app'>
+        <Navbar/>
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/shop' element={<Shop />} />
