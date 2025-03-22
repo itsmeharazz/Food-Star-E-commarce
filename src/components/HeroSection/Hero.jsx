@@ -16,7 +16,7 @@ const Hero = () => {
     progressContent.current.textContent = `${Math.ceil(time / 200)}s`;
   };
   return (
-    <div className='container mt-22 pt-1 h-[65vh] md:h-[23em] w-full block md:flex justify-between items-center gap-5 overflow-hidden'>
+    <div className='container mt-22 pt-1 h-[23em] sm:h-[10em] w-full md:flex justify-between items-center gap-5 overflow-hidden'>
       {/* Hero content right slider */}
       <div className='hero-lef w-full md:w-[75%]  flex justify-between gap-1 '>
         <Swiper
@@ -72,12 +72,12 @@ const Hero = () => {
         </Swiper>
       </div>
       {/* hero left content */}
-      <div className='hero-right w-full h-full md:w-[25%] '>
+      <div className='hero-right hidden md:block  w-full h-full md:w-[25%] '>
         <h2 className='font-extrabold my-3 text-accent'>Up Coming Products</h2>
         <div className='w-full h-full  flex flex-col gap-4 overflow-y-scroll pb-5'>
-          {upComing.map((comingSoon, imdex) => (
+          {upComing.map((comingSoon, index) => (
             <div
-              key={imdex}
+              key={index}
               className='coming-soon rounded-3xl p-2 w-[95%] h-[10em] flex justify-between items-center bg-[#e8e4e4] mx-auto gap-6'>
               <img src={comingSoon.img} className='w-[50%] h-[80%]' alt='' />
               <div className='w-[50%]  h-[80%] grid grid-cols-2 gap-3'>

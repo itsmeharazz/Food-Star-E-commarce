@@ -12,7 +12,7 @@ const Topsaleing = () => {
           Show all
         </button>
       </div>
-      <div className='flex justify-between items-center'>
+      <div className='flex flex-wrap gap-8 justify-between items-center'>
         {products.slice(0, 4).map((offerItems, index) => (
           <div
             key={index}

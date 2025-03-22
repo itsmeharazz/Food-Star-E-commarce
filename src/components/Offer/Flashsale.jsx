@@ -5,7 +5,7 @@ import { Navigate } from "react-router-dom";
 const Flashsale = () => {
   return (
     <div className='container my-5'>
-      <img src={assets.coming_soon} className='w-full h-[20em] mb-5' alt='' />
+      <img src={assets.coming_soon} className='w-full md:h-[20em] h-[10em] mb-5' alt='' />
       <div className='w-full flex justify-end my-5'>
         <button
           className='cursor-pointer w-[6em] h-[2em] bg-accent rounded-2xl hover:bg-accent-dark '
@@ -13,7 +13,7 @@ const Flashsale = () => {
           Show all
         </button>
       </div>
-      <div className='flex justify-between items-center'>
+      <div className='flex flex-wrap gap-8 justify-between items-center'>
         {products.slice(0, 4).map((offerItems, index) => (
           <div
             key={index}
