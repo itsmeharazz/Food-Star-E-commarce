@@ -42,25 +42,25 @@ const Hero = () => {
             ))} */}
           {/* chatgpt code end */}
           <SwiperSlide>
-            <img src={coverImage.cover} alt='' />
+            <img src={coverImage.cover} className='object-cover' alt='' />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={coverImage.cover_1} alt='' />
+            <img src={coverImage.cover_1} className='object-cover' alt='' />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={coverImage.cover_2} alt='' />
+            <img src={coverImage.cover_2} className='object-cover' alt='' />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={coverImage.cover_3} alt='' />
+            <img src={coverImage.cover_3} className='object-cover' alt='' />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={coverImage.cover_4} alt='' />
+            <img src={coverImage.cover_4} className='object-cover' alt='' />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={coverImage.cover_5} alt='' />
+            <img src={coverImage.cover_5} className='object-cover' alt='' />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={coverImage.cover_6} alt='' />
+            <img src={coverImage.cover_6} className='object-cover' alt='' />
           </SwiperSlide>
 
           <div className='autoplay-progress' slot='container-end'>

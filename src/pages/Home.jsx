@@ -7,6 +7,7 @@ const Home = () => {
     <div>
       <Hero />
     <Category categoryes={category} setCategory={setCategory}/>
+    
     </div>
   )
 }
