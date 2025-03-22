@@ -1,22 +1,24 @@
-import React from 'react'
-import { useState } from 'react'
-import {assets} from '../../assets/assets';
+import React from "react";
+import { useState } from "react";
+import { assets } from "../../assets/assets";
 import { CgProfile } from "react-icons/cg";
 import { BsBasket2 } from "react-icons/bs";
 import { HiMenu, HiX } from "react-icons/hi";
-
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
-    const [isMenuOpen, setIsMenuOpen]= useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
     <div className='bg-gray-100 border-b border-gray-100 shadow-sm backdrop-blur-sm fixed left-0 right-0 top-0 z-50'>
       <div className='container flex h-16 justify-between w-full items-center lg:px-8 md:h-20 mx-auto px-4 sm:px-6'>
         {/* Logo */}
-        <img
-          src={assets.logo}
-          alt='Food Star'
-          className='cursor-pointer md:w-[13em] md:h-[8em] w-[8em] h-[6em]'
-        />
+        <Link to={"/"}>
+          <img
+            src={assets.logo}
+            alt='Food Star'
+            className='cursor-pointer md:w-[13em] md:h-[8em] w-[8em] h-[6em]'
+          />
+        </Link>
         {/* Mobile Menu Button */}
         <button
           className='p-2 md:hidden'
@@ -29,9 +31,15 @@ const Navbar = () => {
         </button>
         {/* Navigation Links - Desktop */}
         <ul className='hidden justify-between items-center gap-4 cursor-pointer text-accent  md:flex'>
-          <li className=' hover:text-gray-400'>Home</li>
-          <li className=' hover:text-gray-400'>Shop</li>
-          <li className=' hover:text-gray-400'>Category</li>
+          <Link to='/' className='hover:text-gray-400'>
+            Home
+          </Link>
+          <Link to='/shop' className='hover:text-gray-400'>
+            Shop
+          </Link>
+          <Link to='/category' className='hover:text-gray-400'>
+            Category
+          </Link>
         </ul>
         {/* cart items icons */}
         <div className='hidden md:flex justify-between items-center gap-5 '>
@@ -57,9 +65,15 @@ const Navbar = () => {
           <div className='bg-white w-[100%] mt-65 border-gray-100 border-t md:hidden py-4'>
             <div className='container mx-auto px-4 space-y-4'>
               <ul className='block justify-between items-center gap-4 cursor-pointer text-accent  md:hidden'>
-                <li className=' hover:text-gray-400'>Home</li>
-                <li className=' hover:text-gray-400'>Shop</li>
-                <li className=' hover:text-gray-400'>Category</li>
+                <Link to='/' className='hover:text-gray-400'>
+                  Home
+                </Link>
+                <Link to='/shop' className='hover:text-gray-400'>
+                  Shop
+                </Link>
+                <Link to='/category' className='hover:text-gray-400'>
+                  Category
+                </Link>
               </ul>
               {/* cart items icons */}
               <div className='flex justify-between mt-10 items-center gap-5 '>
@@ -77,6 +91,6 @@ const Navbar = () => {
       </div>
     </div>
   );
-}
+};
 
-export default Navbar
+export default Navbar;
