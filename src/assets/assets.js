@@ -4,12 +4,20 @@ import coming_soon from "./offer coming soon.png";
 import eid_offer from "./Eid offer.jpg";
 
 // cover images
-import cover_5 from "./covar-5.png";
 import cover from "./Cover banner.png";
-import cover_1 from "./cover-1.png";
-import cover_2 from "./Cover-2.png";
-import cover_3 from "./cover-3.png";
-import cover_4 from "./cover-4.png";
+import cover_1 from './Cover-1.png';
+import cover_2 from './Cover-2.png';
+import cover_3 from './Cover-3.png';
+import cover_4 from './Cover-4.png';
+import cover_5 from './Cover-5.png';
+import cover_6 from './Cover-6.png';
+
+// Upcoming products
+import coming_1 from './Grocery-1.png';
+import coming_2 from './Grocery-2.png';
+import coming_3 from './Grocery-3.png';
+import coming_4 from './Grocery-4.png';
+import coming_5 from './Grocery-5.png';
 
 // category images
 import tools from "./Baking Tools.png";
@@ -67,7 +75,46 @@ export const coverImage = {
   cover_3,
   cover_4,
   cover_5,
+  cover_6,
 };
+// up coming image
+export const upComing = [
+  {
+    img: coming_1,
+    day:'10',
+    hours:'23',
+    minutes:'55',
+    seconds:'35',
+  },
+  {
+    img: coming_2,
+    day:'10',
+    hours:'23',
+    minutes:'55',
+    seconds:'35',
+  },
+  {
+    img: coming_3,
+    day:'10',
+    hours:'23',
+    minutes:'55',
+    seconds:'35',
+  },
+  {
+    img: coming_4,
+    day:'10',
+    hours:'23',
+    minutes:'55',
+    seconds:'35',
+  },
+  {
+    img: coming_5,
+    day:'10',
+    hours:'23',
+    minutes:'55',
+    seconds:'35',
+  },
+];
 // Category
 export const category = [
   {
