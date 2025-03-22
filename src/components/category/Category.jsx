@@ -3,8 +3,8 @@ import {category} from '../../assets/assets';
 import { Navigate } from 'react-router-dom';
 const Category = ({categoryes,setCategory}) => {
   return (
-    <div className='container my-10 '>
-      <div className='w-full flex justify-end my-5'>
+    <div className='container my-15 '>
+      <div className='w-full flex justify-end my-9'>
         <button
           className='cursor-pointer w-[6em] h-[2em] bg-accent rounded-2xl hover:bg-accent-dark '
           onClick={() => Navigate("/category")}>
@@ -12,7 +12,7 @@ const Category = ({categoryes,setCategory}) => {
         </button>
       </div>
       <div className=' flex w-full h-[9em]  justify-between items-center gap-4 '>
-        {category.map((items, index) => (
+        {category.slice(0, 8).map((items, index) => (
           <div
             key={index}
             onClick={() =>
