@@ -1,9 +1,16 @@
 import React from 'react'
 import {category} from '../../assets/assets';
-
+import { Navigate } from 'react-router-dom';
 const Category = ({categoryes,setCategory}) => {
   return (
     <div className='container my-10 '>
+      <div className='w-full flex justify-end my-5'>
+        <button
+          className='cursor-pointer w-[6em] h-[2em] bg-accent rounded-2xl hover:bg-accent-dark '
+          onClick={() => Navigate("/category")}>
+          Show all
+        </button>
+      </div>
       <div className=' flex w-full h-[9em]  justify-between items-center gap-4 '>
         {category.map((items, index) => (
           <div
@@ -16,9 +23,7 @@ const Category = ({categoryes,setCategory}) => {
               <img
                 src={items.image}
                 className={`rounded-full  object-cover transition-all duration-300 ${
-                  categoryes === items.name
-                    ? "active p-1"
-                    : ""
+                  categoryes === items.name ? "active p-1" : ""
                 }`}
                 alt=''
               />
