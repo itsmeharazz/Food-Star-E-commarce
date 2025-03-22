@@ -16,7 +16,7 @@ const Hero = () => {
     progressContent.current.textContent = `${Math.ceil(time / 200)}s`;
   };
   return (
-    <div className='container mt-22 pt-1 h-[23em] sm:h-[10em] w-full md:flex justify-between items-center gap-5 overflow-hidden'>
+    <div className='container mt-22 pt-1 md:h-[23em] h-[10em] w-full md:flex justify-between items-center gap-5 overflow-hidden'>
       {/* Hero content right slider */}
       <div className='hero-lef w-full md:w-[75%]  flex justify-between gap-1 '>
         <Swiper
