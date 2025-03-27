@@ -18,7 +18,7 @@ const Hero = () => {
   return (
     <div className='container mt-28 pt-1 md:h-[30vh] lg:h-[65vh] sm:h-[10em] w-full md:flex justify-between items-center gap-5 overflow-hidden'>
       {/* Hero content right slider */}
-      <div className='hero-lef w-full md:w-[75%]   flex justify-between gap-1 '>
+      <div className='hero-lef w-full md:w-[65%] lg:w-[75%]   flex justify-between gap-1 '>
         <Swiper
           spaceBetween={30}
           centeredSlides={true}
@@ -104,22 +104,26 @@ const Hero = () => {
 </div> */}
       {/* hero left content */}
 
-      <div className='hero-right hidden md:block h-full w-[25%] '>
+      <div className='hero-right hidden md:block h-full w-[25%] md:w-[30%] '>
         <h2 className='font-extrabold mb-3 text-accent'>Up Coming Products</h2>
         <div className='w-full h-full  flex flex-col gap-4 overflow-y-scroll pb-5'>
           {upComing.map((comingSoon, index) => (
             <div
               key={index}
-              className='coming-soon rounded-3xl p-2 w-[95%] h-[10em] flex justify-between items-center bg-[#e8e4e4] mx-auto gap-6'>
-              <img src={comingSoon.img} className='w-[50%] h-[80%]' alt='' />
-              <div className='w-[50%]  h-[80%] grid grid-cols-2 gap-3'>
-                <p className='text-center pt-3 p-1  text-white bg-[#ff7016] rounded-2xl'>
+              className='coming-soon rounded-3xl p-2 w-[95%] min-h-[10em] md:h-[13em] flex justify-between items-center bg-[#e8e4e4] mx-auto gap-6'>
+              <img
+                src={comingSoon.img}
+                className='min-w-[50%] md:w-[30%] min-h-[80%] md:h-[50%]'
+                alt=''
+              />
+              <div className='w-[50%] md:w-[75%]  h-[80%] grid grid-cols-2 gap-3'>
+                <p className='text-center pt-3 p-1  text-white md:text-sm bg-[#ff7016] rounded-2xl'>
                   {comingSoon.day} D
                 </p>
-                <p className='text-center pt-3 p-1  text-white bg-[#ff7016] rounded-2xl'>
+                <p className='text-center pt-3 p-1  text-white md:text-sm bg-[#ff7016] rounded-2xl'>
                   {comingSoon.hours} H
                 </p>
-                <p className='text-center pt-3 p-1  text-white bg-[#ff7016] rounded-2xl'>
+                <p className='text-center pt-3 p-1  text-white md:text-sm bg-[#ff7016] rounded-2xl'>
                   {comingSoon.minutes} M
                 </p>
                 <p className='text-center pt-3 p-1  text-white bg-[#ff7016] rounded-2xl'>

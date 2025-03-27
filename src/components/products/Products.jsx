@@ -13,7 +13,7 @@ const Products = () => {
           Show all
         </button>
       </div>
-      <div className='mb-30 grid grid-cols-1 md:grid-cols-4 gap-12'>
+      <div className='mb-30 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12'>
         {products.slice(8, 16).map((offerItems, index) => (
           <div
             key={index}
