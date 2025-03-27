@@ -25,7 +25,11 @@ const Flashsale = () => {
             onClick={() => Navigate("/productsDetails")}
             className='cursor-pointer w-full  h-[23em]  rounded-3xl shadow-xl hover:shadow-2xl  overflow-hidden'>
             <div className='w-full h-[250px]'>
-              <img src={offerItems.image} className=' w-[100%] h-full aspect-square' alt='' />
+              <img
+                src={offerItems.image}
+                className=' w-[100%] h-full aspect-square'
+                alt=''
+              />
             </div>
             <p className='my-3 pl-3 text-xl font-medium '>
               {offerItems.name.length > 5
