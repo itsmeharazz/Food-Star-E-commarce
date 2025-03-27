@@ -21,8 +21,8 @@ body{
   .container {
     margin-left: auto;
     margin-right: auto;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 45px;
+    padding-right: 45px;
   }
   .icon__wrapper {
     @apply border border-gray-400 rounded-full w-[50px] h-[50px] grid place-items-center text-[22px];
@@ -54,6 +54,9 @@ body{
   }
 }
 
+button{
+  color: #fff;
+}
 
 swiper {
   width: 100%;

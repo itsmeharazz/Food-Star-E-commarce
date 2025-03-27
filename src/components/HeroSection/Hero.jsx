@@ -16,12 +16,13 @@ const Hero = () => {
     progressContent.current.textContent = `${Math.ceil(time / 200)}s`;
   };
   return (
-    <div className='container mt-22 pt-1 md:h-[23em] h-[10em] w-full md:flex justify-between items-center gap-5 overflow-hidden'>
+    <div className='container mt-28 pt-1 md:h-[30vh] lg:h-[65vh] sm:h-[10em] w-full md:flex justify-between items-center gap-5 overflow-hidden'>
       {/* Hero content right slider */}
-      <div className='hero-lef w-full md:w-[75%]  flex justify-between gap-1 '>
+      <div className='hero-lef w-full md:w-[75%]   flex justify-between gap-1 '>
         <Swiper
           spaceBetween={30}
           centeredSlides={true}
+          loop={true}
           autoplay={{
             delay: 3000,
             disableOnInteraction: false,
@@ -71,9 +72,40 @@ const Hero = () => {
           </div>
         </Swiper>
       </div>
+      {/* <div className='hero-lef w-full md:w-[75%] flex justify-between gap-1'>
+  <Swiper
+    spaceBetween={30}
+    centeredSlides={true}
+    loop={true}
+    autoplay={{
+      delay: 3000,
+      disableOnInteraction: false,
+    }}
+    pagination={{
+      clickable: true,
+    }}
+    navigation={true}
+    modules={[Autoplay, Pagination, Navigation]}
+    onAutoplayTimeLeft={onAutoplayTimeLeft}
+    className='mySwiper'
+  >
+    {Object.values(coverImage).map((cover, index) => (
+      <SwiperSlide key={index}>
+        <img src={cover} className='object-cover' />
+      </SwiperSlide>
+    ))}
+    <div className='autoplay-progress' slot='container-end'>
+      <svg viewBox='0 0 48 48' ref={progressCircle}>
+        <circle cx='24' cy='24' r='20'></circle>
+      </svg>
+      <span ref={progressContent}></span>
+    </div>
+  </Swiper>
+</div> */}
       {/* hero left content */}
-      <div className='hero-right hidden md:block  w-full h-full md:w-[25%] '>
-        <h2 className='font-extrabold my-3 text-accent'>Up Coming Products</h2>
+
+      <div className='hero-right hidden md:block h-full w-[25%] '>
+        <h2 className='font-extrabold mb-3 text-accent'>Up Coming Products</h2>
         <div className='w-full h-full  flex flex-col gap-4 overflow-y-scroll pb-5'>
           {upComing.map((comingSoon, index) => (
             <div
