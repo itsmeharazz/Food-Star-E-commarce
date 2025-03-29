@@ -18,22 +18,41 @@ const ProductsDetail = () => {
             <h2 className='text-2xl font-bold'>{product.name}</h2>
             <div className='mt-10 flex gap-10 items-center'>
               <p className='text-2xl'>
-                Price <br />৳{product.price}
+                Price <br />৳ {product.price}
               </p>
               <div className='w-[130px] h-[40px] p-3 rounded-4xl  border border-gray-400 flex justify-between items-center '>
-                <FaWindowMinimize className='mb-3' />
+                <FaWindowMinimize className='mb-3 cursor-pointer' />
                 <span>0</span>
-                <FaPlus />
+                <FaPlus className=" cursor-pointer"/>
               </div>
             </div>
-              <button className="flex justify-around items-center gap-3 mt-10">
-                <MdShoppingCartCheckout />
-                Add to Cart
-              </button>
+            <div className='flex justify-around items-center rounded-2xl w-[35%] p-2 gap-2 mt-10 text-white bg-[#ff7016] hover:bg-[#43bb00] transition-all ease-in-out cursor-pointer'>
+              <MdShoppingCartCheckout className='text-2xl' />
+              <p>Add to Cart</p>
+            </div>
           </div>
         </div>
-        <p className="mt-20 text-2xl ">{product.description}</p>
-        <p className="mt-10">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum dolorum error voluptatibus laborum temporibus eius reiciendis dolorem vitae pariatur minima obcaecati laudantium illum fugit, consectetur, totam accusantium aperiam sint dolor facere officia ducimus, quos a odit. Magni dolor doloremque perspiciatis natus esse facilis alias reprehenderit sed itaque similique nemo explicabo numquam, necessitatibus nulla deleniti a assumenda. Dolores iure molestias quas temporibus pariatur! Eligendi possimus a numquam obcaecati laboriosam. Architecto earum, enim perferendis voluptas eligendi facilis exercitationem. Deleniti numquam, non harum maiores at dolorem ea, aut nisi quas iusto temporibus repudiandae eius corrupti est doloremque dolore placeat reprehenderit assumenda cumque dolor soluta exercitationem iure! Quidem ipsa error ex, nobis voluptatum quis dicta doloremque consequuntur nostrum perspiciatis a distinctio provident beatae magni. Expedita, perspiciatis? Dolore maxime rerum accusantium deserunt officiis facilis temporibus quibusdam porro provident facere! Et nostrum soluta quae nobis praesentium quas ipsum unde. Explicabo inventore perferendis pariatur asperiores commodi corporis?</p>
+        <p className='mt-20 text-2xl '>{product.description}</p>
+        <p className='mt-10'>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum
+          dolorum error voluptatibus laborum temporibus eius reiciendis dolorem
+          vitae pariatur minima obcaecati laudantium illum fugit, consectetur,
+          totam accusantium aperiam sint dolor facere officia ducimus, quos a
+          odit. Magni dolor doloremque perspiciatis natus esse facilis alias
+          reprehenderit sed itaque similique nemo explicabo numquam,
+          necessitatibus nulla deleniti a assumenda. Dolores iure molestias quas
+          temporibus pariatur! Eligendi possimus a numquam obcaecati laboriosam.
+          Architecto earum, enim perferendis voluptas eligendi facilis
+          exercitationem. Deleniti numquam, non harum maiores at dolorem ea, aut
+          nisi quas iusto temporibus repudiandae eius corrupti est doloremque
+          dolore placeat reprehenderit assumenda cumque dolor soluta
+          exercitationem iure! Quidem ipsa error ex, nobis voluptatum quis dicta
+          doloremque consequuntur nostrum perspiciatis a distinctio provident
+          beatae magni. Expedita, perspiciatis? Dolore maxime rerum accusantium
+          deserunt officiis facilis temporibus quibusdam porro provident facere!
+          Et nostrum soluta quae nobis praesentium quas ipsum unde. Explicabo
+          inventore perferendis pariatur asperiores commodi corporis?
+        </p>
       </div>
     </div>
   );
