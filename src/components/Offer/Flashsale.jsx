@@ -1,7 +1,7 @@
 import React from 'react'
 import {assets} from '../../assets/assets';
 import { products } from "../../assets/assets";
-import { Navigate } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
 const Flashsale = () => {
   return (
     <div className='container my-5'>
@@ -15,9 +15,9 @@ const Flashsale = () => {
       </div>
       <div className='flex justify-between items-center'>
         {products.slice(0, 4).map((offerItems, index) => (
-          <div
+          <Link
+            to={`/productsDetails/${offerItems.id}`}
             key={index}
-            onClick={() => Navigate("/productsDetails")}
             className='cursor-pointer w-full  md:w-[22%] h-[20em] rounded-3xl shadow-xl hover:shadow-2xl  overflow-hidden block md:flex flex-col'>
             <div className='w-full h-[70%] overflow-hidden'>
               <img src={offerItems.image} className='object-cover' alt='' />
@@ -29,7 +29,7 @@ const Flashsale = () => {
                 ৳ {offerItems.price}
               </p>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
     </div>

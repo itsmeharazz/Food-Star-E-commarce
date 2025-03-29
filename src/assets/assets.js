@@ -165,7 +165,7 @@ export const category = [
 // Products
 export const products = [
   {
-    id: "1",
+    id: '1',
     name: "Almond",
     image: almond,
     price: 670,
