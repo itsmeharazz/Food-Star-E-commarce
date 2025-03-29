@@ -1,37 +1,40 @@
-import React from 'react'
-import {assets} from '../../assets/assets';
+import React from "react";
+import { Link, useNavigate } from "react-router-dom";
+import { assets } from "../../assets/assets";
 import { products } from "../../assets/assets";
-import { Navigate, useNavigate } from "react-router-dom";
+
 const Flashsale = () => {
-  const Navigate = useNavigate();
+  const navigate = useNavigate(); // Fixed naming
+
   return (
     <div className='container my-5'>
       <img
         src={assets.coming_soon}
-        className='w-full h-[15em] md:h-[30em]  mb-5'
-        alt=''
+        className='w-full h-[15em] md:h-[30em] mb-5'
+        alt='Coming Soon'
       />
       <div className='w-full flex justify-end my-5'>
         <button
-          className='cursor-pointer mt-15 w-[6em] h-[2em] bg-accent rounded-2xl hover:bg-accent-dark '
-          onClick={() => Navigate("/shop")}>
+          className='cursor-pointer w-[6em] h-[2em] bg-accent rounded-2xl hover:bg-accent-dark'
+          onClick={() => navigate("/shop")} // Fixed navigation
+        >
           Show all
         </button>
       </div>
-      <div className=' mb-30 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12'>
+      <div className='mb-30 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12'>
         {products.slice(0, 4).map((offerItems, index) => (
-          <div
+          <Link
+            to={`/productsDetails/${offerItems.id}`} // Corrected Link navigation
             key={index}
-            onClick={() => Navigate("/productsDetails")}
-            className='cursor-pointer w-full  h-[23em]  rounded-3xl shadow-xl hover:shadow-2xl  overflow-hidden'>
-            <div className='w-full h-[250px]'>
+            className='cursor-pointer w-full h-[23em] rounded-3xl shadow-xl hover:shadow-2xl overflow-hidden'>
+            <div className='w-full h-[70%] overflow-hidden'>
               <img
                 src={offerItems.image}
-                className=' w-[100%] h-full aspect-auto'
-                alt=''
+                className='w-full h-full object-cover'
+                alt={offerItems.name}
               />
             </div>
-            <p className='my-3 pl-3 text-xl font-medium '>
+            <p className='my-3 pl-3 text-xl font-medium'>
               {offerItems.name.length > 5
                 ? `${offerItems.name.slice(0, 5)}...`
                 : offerItems.name}
@@ -42,11 +45,11 @@ const Flashsale = () => {
                 ৳ {offerItems.price}
               </p>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
     </div>
   );
-}
+};
 
-export default Flashsale
+export default Flashsale;
