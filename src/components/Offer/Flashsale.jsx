@@ -27,7 +27,7 @@ const Flashsale = () => {
             <div className='w-full h-[250px]'>
               <img
                 src={offerItems.image}
-                className=' w-[100%] h-full aspect-square'
+                className=' w-[100%] h-full aspect-auto'
                 alt=''
               />
             </div>
