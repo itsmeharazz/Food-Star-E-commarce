@@ -1,6 +1,6 @@
 import React from "react";
 import { products } from "../../assets/assets";
-import { useNavigate} from "react-router-dom";
+import { Link, useNavigate} from "react-router-dom";
 const Topsaleing = () => {
   const Navigate = useNavigate();
   return (
@@ -17,7 +17,8 @@ const Topsaleing = () => {
       </div>
       <div className='mb-30 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12'>
         {products.slice(4, 8).map((offerItems, index) => (
-          <div
+          <Link
+            to={`/productsDetails/${offerItems.id}`}
             key={index}
             onClick={() => Navigate("/productsDetails")}
             className='cursor-pointer w-full  h-[23em]  rounded-3xl shadow-xl hover:shadow-2xl  overflow-hidden'>
@@ -39,7 +40,7 @@ const Topsaleing = () => {
               </div>
               <p className='font-medium p-4'>৳ {offerItems.price}</p>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
     </div>
