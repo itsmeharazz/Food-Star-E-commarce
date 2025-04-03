@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import Shop from "./pages/Shop";
@@ -8,12 +8,14 @@ import ProductsDetails from "./pages/ProductsDetail";
 import Navbar from "./components/navbar/Navbar";
 import CategoryPage from "./pages/CategoryPage";
 import Footer from "./components/footer/Footer";
+import SignInPopUp from "./components/popUp/SignInPopUp";
 
 const App = () => {
+     const [showLogin, setShowLogin] = useState(false);
   return (
     <>
-      <div className='app'>
-        <Navbar/>
+        {showLogin ? <SignInPopUp setShowLogin={setShowLogin} /> : <></>}
+        <Navbar setShowLogin={setShowLogin} />
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/shop' element={<Shop />} />
@@ -23,7 +25,6 @@ const App = () => {
           <Route path='/productsDetails/:id' element={<ProductsDetails />} />
         </Routes>
         <Footer />
-      </div>
     </>
   );
 };

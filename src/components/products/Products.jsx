@@ -1,6 +1,6 @@
 import React from "react";
 import { products } from "../../assets/assets";
-import {  Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 const Products = () => {
   const Navigate = useNavigate();
   return (
