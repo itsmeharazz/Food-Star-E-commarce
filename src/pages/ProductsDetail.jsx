@@ -1,9 +1,11 @@
-import React from "react";
+import React,{useContext} from "react";
+import { StoreContext } from "../context/StoreContext";
 import { useParams } from "react-router-dom";
 import {products} from "../assets/assets"; 
 import { FaPlus, FaWindowMinimize } from "react-icons/fa6";
 import { MdShoppingCartCheckout } from "react-icons/md";
 const ProductsDetail = () => {
+   const { cartItems, addToCart, removeFromCart } = useContext(StoreContext);
  const { id } = useParams();
   const product = products.find((item) => item.id.toString() === id);
   if (!product) {
@@ -20,16 +22,22 @@ const ProductsDetail = () => {
               <p className='text-2xl'>
                 Price <br />৳ {product.price}
               </p>
-              <div className='w-[130px] h-[40px] p-3 rounded-4xl  border border-gray-400 flex justify-between items-center '>
-                <FaWindowMinimize className='mb-3 cursor-pointer' />
-                <span>0</span>
-                <FaPlus className=" cursor-pointer"/>
+            </div>
+
+            {!cartItems[id] ? (
+              <div
+                className='flex justify-around items-center rounded-2xl w-[35%] p-2 gap-2 mt-10 text-white bg-[#ff7016] hover:bg-[#43bb00] transition-all ease-in-out cursor-pointer'
+                onClick={() => addToCart(id)}>
+                <MdShoppingCartCheckout className='text-2xl' />
+                <p>Add to Cart</p>
               </div>
-            </div>
-            <div className='flex justify-around items-center rounded-2xl w-[35%] p-2 gap-2 mt-10 text-white bg-[#ff7016] hover:bg-[#43bb00] transition-all ease-in-out cursor-pointer'>
-              <MdShoppingCartCheckout className='text-2xl' />
-              <p>Add to Cart</p>
-            </div>
+            ) : (
+               <div className='w-[130px] h-[40px] p-3 rounded-4xl  border border-gray-400 flex justify-between items-center  '>
+                <FaWindowMinimize className='mb-3 cursor-pointer' onClick={() => removeFromCart(id)}/>
+                <p> {cartItems[id]} </p>
+                <FaPlus className=' cursor-pointer'  onClick={() => addToCart(id)}/>
+              </div>
+            )}
           </div>
         </div>
         <p className='mt-20 text-2xl '>{product.description}</p>
