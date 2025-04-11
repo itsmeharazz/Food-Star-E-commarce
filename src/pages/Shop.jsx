@@ -1,9 +1,87 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
+import CategorySelection from '../components/CategorySelection/CategorySelection';
+import ProductsCard from '../components/ProductsCard/ProductsCard';
+import Pagination from '../components/Pagination/Pagination';
 
 const Shop = () => {
+     const [products, setProducts]= useState([]);
+     const [currentPage, setCurrentPage] = useState(1);
+     const pageSize = 9;
+     const [selectedCategory, setSelectedCategory] = useState(null);
+     const [activeCategory, setActiveCategory] = useState(null);
+
+     useEffect(() => {
+       async function fetchproducts() {
+         let url =
+           "http://localhost:5000/products?page=${currentPage}&limit=${pageSize}";
+         if (selectedCategory) {
+           url += `&category=${selectedCategory}`;
+         }
+         const response = await fetch(url);
+         const data = await response.json();
+         setProducts(data);
+       }
+       fetchproducts();
+     }, [currentPage, pageSize, selectedCategory]);
+     const handlePageChange = (pageNumber) =>{
+        setCurrentPage(pageNumber);
+     };
+const handleCategoryChange = (category) => {
+  setSelectedCategory(category);
+  setCurrentPage(1);
+  setActiveCategory(category);
+};
+
   return (
-    <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae illo recusandae ea, eius vero tempore quod, ullam necessitatibus voluptate quam tempora numquam quia! Numquam nam quibusdam beatae tenetur quaerat nulla odit, aspernatur, libero soluta qui velit dolores tempore. Sint quasi distinctio quaerat. Aperiam similique mollitia necessitatibus a earum cupiditate vero id, quia, tenetur in ea distinctio minima, voluptas soluta recusandae porro quas? Accusantium saepe illo vero quia sunt, autem quos velit natus amet inventore cupiditate iusto rerum similique aliquid qui ipsa modi rem aspernatur. Harum sapiente officia eos, provident dolorum blanditiis ab doloribus eum eveniet magnam voluptatibus inventore, autem molestiae.</div>
-  )
+    <div>
+      <div className='container mt-25 px-12 flex justify-between items-start gap-10'>
+
+        {/* Sid bar */}
+          <div className='sidevar w-[23%]'>
+            {/* Display Category */}
+            <div className='w-full h-[360px] shadow-md rounded-xl border border-[#d9d9d9] mb-10 py-5 px-4'>
+              <h2 className='text-2xl font-extrabold text-[#383636] mb-2'>
+                Category
+              </h2>
+              <div className=' overflow-y-school '>
+                
+                <CategorySelection
+                  onSelectCategory={handleCategoryChange}
+                  selectedCategory={selectedCategory}
+                  activeCategory={activeCategory}
+                />
+              </div>
+            </div>
+            {/* Display Brand */}
+            <div className='w-full h-[360px] shadow-md rounded-xl border border-[#d9d9d9] mb-10 py-5 px-4'>
+              <h2 className='text-2xl font-bold text-[#383636] mb-2'>Brands</h2>
+              <div className=' overflow-y-school '></div>
+            </div>
+          </div>
+
+          {/* Display Products  */}
+          <div className='w-[75%]'>
+            <ProductsCard
+              products={products}
+              currentPage={currentPage}
+              selectedCategory={selectedCategory}
+              pageSize={pageSize}
+            />
+          </div>
+      </div>
+
+      {/* Display Pagination */}
+      <div className='my-10 '>
+        <Pagination
+          onPageChange={handlePageChange}
+          products={products}
+          currentPage={currentPage}
+          pageSize={pageSize}
+        />
+      </div>
+    </div>
+  );
+ 
 }
 
 export default Shop
