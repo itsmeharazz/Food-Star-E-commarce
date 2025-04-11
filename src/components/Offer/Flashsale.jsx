@@ -7,7 +7,7 @@ const Flashsale = () => {
   const navigate = useNavigate(); // Fixed naming
 
   return (
-    <div className='container my-5'>
+    <div className='container my-10 mt-30'>
       <img
         src={assets.coming_soon}
         className='w-full h-[15em] md:h-[30em] mb-5'

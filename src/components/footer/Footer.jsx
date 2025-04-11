@@ -1,6 +1,12 @@
 import React from 'react'
 import { assets } from '../../assets/assets';
 import { FaRegCopyright } from "react-icons/fa";
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaYoutube,
+  FaLinkedin,
+} from "react-icons/fa";
 const Footer = () => {
   return (
     <div className='bg-[#eceaea]'>
@@ -13,6 +19,28 @@ const Footer = () => {
             Praesentium, et consequuntur vel perspiciatis, quos est excepturi
             ullam distinctio deserunt maxime ut iste magni.
           </p>
+          <div className='my-10 flex gap-4 items-center'>
+            <a
+              href='https://web.facebook.com/bdfoodstar'
+              className='text-2xl font-medium text-[#a2a2a2] hover:text-[#f5922a]'>
+              <FaFacebookF />
+            </a>
+            <a
+              href='https://www.instagram.com/bdfoodstar'
+              className='text-2xl font-medium text-[#a2a2a2] hover:text-[#f5922a]'>
+              <FaInstagram />
+            </a>
+            <a
+              href='https://www.youtube.com/@bdfoodstar'
+              className='text-2xl font-medium text-[#a2a2a2] hover:text-[#f5922a]'>
+              <FaYoutube />
+            </a>
+            <a
+              href='https://www.linkedin.com/in/bdfoodstar/'
+              className='text-2xl font-medium text-[#a2a2a2] hover:text-[#f5922a]'>
+              <FaLinkedin />
+            </a>
+          </div>
         </div>
         <div className='block gap-1 mt-10'>
           <h2 className='mb-10 text-3xl font-extrabold'> COMPANY </h2>
@@ -32,7 +60,7 @@ const Footer = () => {
       <hr className='my-2 h-1 bg-[#d3d0d0] border-none' />
       <p className='py-5 flex items-center gap-2 justify-center '>
         <FaRegCopyright />
-         Meharazul islam 2025
+        Meharazul islam 2025
       </p>
     </div>
   );

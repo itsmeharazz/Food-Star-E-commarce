@@ -9,7 +9,7 @@ const Policy = () => {
       <div className='container w-full md:w-[50%] mx-auto block  md:flex justify-between items-center gap-4'>
         <div className='flex items-center gap-3'>
           <samp className='text-4xl text-[#FBAA72] font-bold'>⟳</samp>
-          <p className='sm:text-sm md:text-xl'>Cash on delivery</p>
+          <p className='sm:text-sm md:text-xl'> 10 days returns</p>
         </div>
         <div className='flex items-center gap-3'>
           <FaDollarSign className='text-3xl text-[#FBAA72] font-bold' />
