@@ -6,7 +6,7 @@ const CategorySelection = ({ onSelectCategory, activeCategory }) => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch("http://localhost:5000/products")
+    fetch("http://localhost:3000/products")
       .then((response) => {
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);

@@ -13,7 +13,7 @@ const Shop = () => {
      useEffect(() => {
        async function fetchproducts() {
          let url =
-           "http://localhost:5000/products?page=${currentPage}&limit=${pageSize}";
+           "http://localhost:3000/products?page=${currentPage}&limit=${pageSize}";
          if (selectedCategory) {
            url += `&category=${selectedCategory}`;
          }
@@ -53,10 +53,10 @@ const handleCategoryChange = (category) => {
               </div>
             </div>
             {/* Display Brand */}
-            <div className='w-full h-[360px] shadow-md rounded-xl border border-[#d9d9d9] mb-10 py-5 px-4'>
+            {/* <div className='w-full h-[360px] shadow-md rounded-xl border border-[#d9d9d9] mb-10 py-5 px-4'>
               <h2 className='text-2xl font-bold text-[#383636] mb-2'>Brands</h2>
               <div className=' overflow-y-school '></div>
-            </div>
+            </div> */}
           </div>
 
           {/* Display Products  */}

@@ -21,7 +21,7 @@ const ProductsCard = ({
     <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10'>
       {filteredProducts.map((product) => (
         <Link
-          to={`/product/${product.id}`}
+          to={`/productsDetails/${product.id}`}
           key={product.id}
           className='p-5 shadow-lg rounded cursor-pointer'>
           <div className='img'>
