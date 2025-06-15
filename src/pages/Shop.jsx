@@ -23,6 +23,7 @@ const Shop = () => {
        }
        fetchproducts();
      }, [currentPage, pageSize, selectedCategory]);
+     
      const handlePageChange = (pageNumber) =>{
         setCurrentPage(pageNumber);
      };

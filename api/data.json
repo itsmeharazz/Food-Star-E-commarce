@@ -73,7 +73,7 @@
     {
       "id": "1",
       "name": "Almond",
-      "image": "./ALMOND.png",
+      "image": "../src/assets/Almond.jpg",
       "price": 670,
       "description": "Almonds are nutrient-rich, heart-healthy nuts with a crunchy texture and a naturally sweet flavor.",
       "category": "Nuts"
@@ -81,7 +81,7 @@
     {
       "id": "2",
       "name": "Cashew Nut",
-      "image": "./CASHEWNUT.png",
+      "image": "../src/assets/cashw nut.jpg",
       "price": 670,
       "description": "Cashew nuts are creamy, nutrient-rich nuts packed with healthy fats, protein, and essential minerals.",
       "category": "Nuts"
@@ -89,7 +89,7 @@
     {
       "id": "3",
       "name": "Mix Nut",
-      "image": "./mix-nut.png",
+      "image": "../src/assets/mix nut.png",
       "price": 800,
       "description": "Mix nuts are a crunchy, nutritious blend of almonds, cashews, walnuts, and other wholesome nuts, perfect for a healthy snack.",
       "category": "Nuts"
@@ -97,7 +97,7 @@
     {
       "id": "4",
       "name": "Hazel Nut",
-      "image": "./Hazelnut.png",
+      "image": "../src/assets/Hazelnut.png",
       "price": 1000,
       "description": "Hazelnuts are rich, buttery-flavored nuts packed with healthy fats, fiber, and antioxidants.",
       "category": "Nuts"
@@ -105,7 +105,7 @@
     {
       "id": "5",
       "name": "Pistachio",
-      "image": "./PISTACHIO.png",
+      "image": "../src/assets/PISTACHIO.png",
       "price": 1000,
       "description": "Pistachios are crunchy, flavorful nuts packed with protein, healthy fats, and essential nutrients.",
       "category": "Nuts"
@@ -113,7 +113,7 @@
     {
       "id": "6",
       "name": "Wal nut",
-      "image": "./WALNUT.png",
+      "image": "../src/assets/WALNUT.png",
       "price": 1000,
       "description": "Walnuts are brain-shaped nuts rich in omega-3 fatty acids, antioxidants, and essential nutrients.",
       "category": "Nuts"
@@ -121,7 +121,7 @@
     {
       "id": "7",
       "name": "Peanuts",
-      "image": "./PEANUT-LARGE.png",
+      "image": "../src/assets/PISTACHIO.png",
       "price": 1000,
       "description": "Peanuts are protein-rich, crunchy legumes packed with healthy fats and essential nutrients.",
       "category": "Nuts"
@@ -129,7 +129,7 @@
     {
       "id": "8",
       "name": "Chia Seed",
-      "image": "./chia-seeds.png",
+      "image": "../src/assets/chia-seeds.png",
       "price": 850,
       "description": "Chia seeds are tiny, nutrient-dense seeds rich in fiber, omega-3s, and antioxidants.",
       "category": "Seeds"
@@ -137,7 +137,7 @@
     {
       "id": "9",
       "name": "Fenugreek leaves",
-      "image": "./fenugreek-leaves.png",
+      "image": "../src/assets/fenugreek-leaves.png",
       "price": 250,
       "description": "Fenugreek leaves are aromatic, bitter greens used in cooking, rich in vitamins, minerals, and antioxidants.",
       "category": "Natural Products"
@@ -145,7 +145,7 @@
     {
       "id": "10",
       "name": "Tuna Fish",
-      "image": "./Flash sale.png",
+      "image": "../src/assets/fish-categoty.png",
       "price": 950,
       "description": "Tuna fish is a lean, protein-rich fish known for its firm texture and mild, savory flavor.",
       "category": "Fish"
@@ -153,7 +153,7 @@
     {
       "id": "11",
       "name": "Curry Powder Masala",
-      "image": "./curry-powder.png",
+      "image": "../src/assets/curry-powder.png",
       "price": 200,
       "description": "Curry powder is a flavorful spice blend made from turmeric, cumin, coriander, and other aromatic spices.",
       "category": "Mix Masala"
@@ -161,7 +161,7 @@
     {
       "id": "12",
       "name": "Kala bhuna Masala",
-      "image": "./Kala bhuna Masala .png",
+      "image": "../src/assets/Kala bhuna Masala .png",
       "price": 200,
       "description": "Kala Bhuna is a rich, flavorful Bengali curry made with slow-cooked meat (often beef or mutton), spices, and a deep, aromatic sauce.",
       "category": "Mix Masala"
@@ -169,7 +169,7 @@
     {
       "id": "13",
       "name": "Kashmiri Chili",
-      "image": "./kashmiri-mirch-red-chilli-powder.png",
+      "image": "../src/assets/kashmiri-mirch-red-chilli-powder.png",
       "price": 200,
       "description": "Kashmiri chili is a mild, bright red chili variety known for its vibrant color and subtle, smoky heat, often used in Indian cuisine.",
       "category": "Mix Masala"
@@ -177,7 +177,7 @@
     {
       "id": "14",
       "name": "Mix masala",
-      "image": "./Masala mix.png",
+      "image": "../src/assets/Masala mix.png",
       "price": 200,
       "description": "Masala mix is a blend of various ground spices, such as cumin, coriander, turmeric, and garam masala, used to add depth and flavor to Indian dishes.",
       "category": "Mix Masala"
@@ -185,7 +185,7 @@
     {
       "id": "15",
       "name": "Nihari masala",
-      "image": "./Nihari.png",
+      "image": "../src/assets/Nihari.png",
       "price": 200,
       "description": "Nihari masala is a rich, aromatic spice mix used in making Nihari, a slow-cooked stew, typically consisting of meat, spices, and herbs.",
       "category": "Mix Masala"
@@ -193,7 +193,7 @@
     {
       "id": "16",
       "name": "Biryani masala",
-      "image": "./shan-biryani-masal.png",
+      "image": "../src/assets/shan-biryani-masal.png",
       "price": 200,
       "description": "Biryani masala is a fragrant spice blend, typically containing cinnamon, cloves, cardamom, and other spices, used to flavor the rice and meat in biryani.",
       "category": "Mix Masala"
@@ -201,7 +201,7 @@
     {
       "id": "17",
       "name": "Chat masala",
-      "image": "./Shan-chaat.png",
+      "image": "../src/assets/Shan-chaat.png",
       "price": 100,
       "description": "Chaat masala is a tangy, spicy seasoning blend made with ingredients like dried mango powder, cumin, black salt, and chili, commonly used in Indian street food.",
       "category": "Mix Masala"
@@ -209,7 +209,7 @@
     {
       "id": "18",
       "name": "Beef Biryani masala",
-      "image": "./shan-karachi-beef-biriyani-60-gm.png",
+      "image": "../src/assets/shan-karachi-beef-biriyani-60-gm.png",
       "price": 150,
       "description": "Beef biryani is a flavorful and aromatic rice dish made with tender beef, basmati rice, and a blend of spices like cumin, cinnamon, and garam masala.",
       "category": "Mix Masala"
@@ -217,7 +217,7 @@
     {
       "id": "19",
       "name": "Seekh Kabab masala",
-      "image": "./shan-seekh-kabab.png",
+      "image": "../src/assets/shan-seekh-kabab.png",
       "price": 300,
       "description": "Seekh kebab is a popular grilled dish made from minced meat, typically beef or chicken, mixed with spices, herbs, and formed onto skewers before being cooked.",
       "category": "Mix Masala"
@@ -225,7 +225,7 @@
     {
       "id": "20",
       "name": "Bombay Birayni masala",
-      "image": "./Shan-Special-Bombay-Biryani-Masa.png",
+      "image": "../src/assets/Shan-Special-Bombay-Biryani-Masa.png",
       "price": 300,
       "description": "Bombay biryani is a flavorful, aromatic rice dish with spiced meat (usually chicken or mutton), potatoes, and a rich blend of Bombay-style spices, often served with raita.",
       "category": "Mix Masala"
@@ -233,7 +233,7 @@
     {
       "id": "21",
       "name": "Tandoori masala",
-      "image": "./Shan-Tandoori-Masala.png",
+      "image": "../src/assets/Shan-Tandoori-Masala.png",
       "price": 300,
       "description": "Tandoori masala is a vibrant spice mix made with ingredients like cumin, coriander, paprika, and garam masala, used to marinate meats for cooking in a tandoor oven.",
       "category": "Mix Masala"
@@ -241,7 +241,7 @@
     {
       "id": "22",
       "name": "Boti Kabab masala",
-      "image": "./shan-tikka(BOti Kabab).png",
+      "image": "../src/assets/shan-tikka(BOti Kabab).png",
       "price": 300,
       "description": "Boti kebab is a delicious, tender grilled dish made from marinated cubes of meat (often beef or lamb), seasoned with spices and yogurt, then cooked until perfectly charred.",
       "category": "Mix Masala"

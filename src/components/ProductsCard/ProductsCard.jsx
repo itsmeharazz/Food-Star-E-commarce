@@ -25,11 +25,7 @@ const ProductsCard = ({
           key={product.id}
           className='p-5 shadow-lg rounded cursor-pointer'>
           <div className='img'>
-            <img
-              src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL8V50qkqxyQ3FASGtT3Ydj51YBAsYOG6qew&s'
-              className='w-full'
-              alt={product.name}
-            />
+            <img src={product.image} className='w-full' alt={product.name} />
           </div>
           <h3 className='mt-4 mb-2 font-bold text-xl hover:text-blue-600 cursor-pointer'>
             {product.name}

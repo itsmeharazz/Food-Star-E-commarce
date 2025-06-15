@@ -34,9 +34,9 @@ import party_category from "./Party-categoty.png";
 // product images
 
 // nuts products
-import almond from "./ALMOND.png";
-import cashewnut from "./CASHEWNUT.png";
-import mix_nut from "./mix-nut.png";
+import almond from "./Almond.jpg";
+import cashewnut from "./cashw nut.jpg";
+import mix_nut from "./mix nut.png";
 import hazelnut from "./Hazelnut.png";
 import pistachio from "./PISTACHIO.png";
 import walnut from "./WALNUT.png";
